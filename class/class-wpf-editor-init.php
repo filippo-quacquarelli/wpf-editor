@@ -64,7 +64,7 @@ class Wpf_Editor
 
     public function content_wrapper( $content )
     {
-        if ( ! Utils::permissions() ) return;
+        if ( ! Utils::permissions() ) return $content;
         
         return '<div class="wpf-editor-content">' . $content . '</div>';
     }
